@@ -180,8 +180,8 @@ def get_location():
 
 # Function to send SMS with criminal location and details
 def send_sms(location, name):
-    account_sid = 'AC4f50eb370293f0633a47092105194baa'
-    auth_token = 'f11666868ded617c124bad4e9f6aaad6'
+    account_sid = ''
+    auth_token = ''
     client = Client(account_sid, auth_token)
 
     lat, lon, city, country = location
@@ -207,10 +207,10 @@ def send_sms(location, name):
             # Send SMS to the nearest phone number
             message = client.messages.create(
                 body=message_body,
-                from_='+12513094295', 
-                to='+919742434370'
+                from_='phone number', 
+                to='phone number'
             )
-            print(f"Message sent to +919742434370: {message.sid}")
+            print(f"Message sent to phone number: {message.sid}")
         else:
             print("No phone number found in the database.")
     except Exception as e:
