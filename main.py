@@ -180,8 +180,8 @@ def get_location():
 
 # Function to send SMS with criminal location and details
 def send_sms(location, name):
-    account_sid = ''
-    auth_token = ''
+
+    
     client = Client(account_sid, auth_token)
 
     lat, lon, city, country = location
