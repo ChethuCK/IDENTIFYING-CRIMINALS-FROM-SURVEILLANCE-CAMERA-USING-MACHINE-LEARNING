@@ -1,8 +1,7 @@
+opencv-python
 numpy
 pandas
-scikit-learn
-opencv-python
-matplotlib
-tensorflow
-keras
-
+tkinter
+pymongo
+face-recognition-python
+Twilio API
