@@ -51,8 +51,6 @@ Ensure you have **Python 3.8+** installed.
 
 ## Requirements
 
-Create a `requirements.txt` file and include the following dependencies:
-
 ```
 opencv-python
 numpy
